@@ -15,6 +15,26 @@ You will also need to have software installed to run and execute a [Jupyter Note
 
 If you do not have Python installed yet, it is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python, which already has the above packages and more included.
 
+#### Setup with Anaconda - IMPORTANT!
+
+Create a 'boston-housing' environment with right dependencies.
+
+```
+conda create -n boston-housing python==3.7.2 scikit-learn==0.18.1 scipy pandas matplotlib jupyter
+```
+
+Set up 'boston-housing' environment.
+
+```
+conda activate <env_name>
+```
+
+When finish or stop work, release environment.
+
+```
+conda deactivate
+```
+
 ### Code
 
 Template code is provided in the `boston_housing.ipynb` notebook file. You will also be required to use the included `visuals.py` Python file and the `housing.csv` dataset file to complete your work. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project. Note that the code included in `visuals.py` is meant to be used out-of-the-box and not intended for students to manipulate. If you are interested in how the visualizations are created in the notebook, please feel free to explore this Python file.
